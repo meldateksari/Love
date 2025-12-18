@@ -42,14 +42,14 @@ export const HeartAnimation: React.FC<HeartAnimationProps> = ({
 
     return (
         <div
-            className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`}
+            className={`pointer-events-none fixed inset-0 overflow-hidden ${className}`}
             aria-hidden="true"
         >
             <style>{`
         @keyframes floatUp {
           0%   { transform: translateY(16px) scale(1); opacity: 0; }
           10%  { opacity: var(--o); }
-          100% { transform: translateY(-120px) scale(1.08); opacity: 0; }
+          100% { transform: translateY(-120vh) scale(1.08); opacity: 0; }
         }
         @media (prefers-reduced-motion: reduce) {
           .heart-float { animation: none !important; }

@@ -27,10 +27,12 @@ const config: Config = {
             },
             fontFamily: {
                 crimson: ['var(--font-crimson)', 'serif'],
+                pacifico: ['var(--font-pacifico)', 'cursive'],
             },
         },
     },
     plugins: [],
+    // Force rebuild for fonts
 };
 
 export default config;

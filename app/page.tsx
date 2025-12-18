@@ -15,10 +15,13 @@ export default function Page() {
       {/* 2) Tüm sayfayı kaplayan hafif bir sis perdesi (Yazıların okunması için) */}
       <div className="pointer-events-none fixed inset-0 -z-10 bg-white/40 backdrop-blur-md" />
 
+      {/* Kalpler */}
+      <HeartAnimation />
+
       {/* 3) ANA İÇERİK KUTUSU */}
       <div className="relative z-10 mx-auto min-h-screen flex flex-col items-center justify-center p-4 py-12 sm:py-20">
 
-        {/* Kalpler */}
+        {/* Kalpler - Moved to root */}
 
         {/* --- CAM KART BAŞLANGICI --- */}
         {/* Bu div, tüm içeriği beyaz, yarı saydam bir kutuya alır */}
@@ -26,7 +29,7 @@ export default function Page() {
 
           <header className="text-center mb-10">
             <h1 className="text-3xl sm:text-5xl font-bold text-rose-950 tracking-tight drop-shadow-sm">
-              <span className="text-rose-700">♡ Sana Sürprizim</span>{" "}
+              <span className="text-rose-700 font-pacifico">♡ Sana Sürprizim</span>{" "}
               <span className="text-rose-600">♡</span>
             </h1>
             <p className="mt-4 text-lg text-rose-900/80 italic">
